@@ -14,13 +14,30 @@ public class Aritmetica {
     int a;
     int b;
 
+    //    constructor vacio
+    public Aritmetica() {
+        System.out.println("ejecutando constructor");
+    }
+    
+    public Aritmetica(int a, int b){
+        System.out.println("ejecutando constructor con argumentos");
+        this.a = a;
+        this.b = b;
+    }
+
     //Metodo
     public void sumar() {
-        int resultado = a + b;
+        int resultado = this.a + this.b;
         System.out.println("resultado = " + resultado);
     }
 
     public int sumarConRetorno() {
-        return a + b;
+        return this.a + this.b;
+    }
+
+    public int sumarConArgumentos(int a, int b) {
+        this.a = a;
+        this.b = b;
+        return sumarConRetorno();
     }
 }

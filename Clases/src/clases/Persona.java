@@ -10,8 +10,8 @@ package clases;
  */
 public class Persona {
 
-    String nombre;
-    char genero;
+    public String nombre;
+    public char genero;
     String ocupacion;
     
     public void desplegarInformacion(){
