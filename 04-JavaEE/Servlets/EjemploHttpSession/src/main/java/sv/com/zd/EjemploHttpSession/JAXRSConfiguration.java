@@ -1,4 +1,4 @@
-package sv.com.zd.ManejoCookies;
+package sv.com.zd.EjemploHttpSession;
 
 import javax.ws.rs.ApplicationPath;
 import javax.ws.rs.core.Application;
