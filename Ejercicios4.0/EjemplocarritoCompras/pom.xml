@@ -5,7 +5,7 @@
     <artifactId>EjemplocarritoCompras</artifactId>
     <version>1.0</version>
     <packaging>war</packaging>
-    <name>EjemplocarritoCompras-1.0</name>
+    <name>EjemplocarritoCompras</name>
     
     <properties>
         <maven.compiler.source>1.8</maven.compiler.source>
@@ -25,7 +25,7 @@
         </dependency>
     </dependencies>
     
-     <build>
+    <build>
         <plugins>
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
@@ -42,7 +42,7 @@
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-war-plugin</artifactId>
-                <version>2.3</version>
+                <version>3.1.0</version>
                 <configuration>
                     <failOnMissingWebXml>false</failOnMissingWebXml>
                 </configuration>
