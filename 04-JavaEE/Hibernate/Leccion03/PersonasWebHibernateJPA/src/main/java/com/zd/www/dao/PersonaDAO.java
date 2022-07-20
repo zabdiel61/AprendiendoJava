@@ -1,6 +1,6 @@
-package com.zd.dao;
+package com.zd.www.dao;
 
-import com.zd.domain.Persona;
+import com.zd.www.domain.Persona;
 import java.util.List;
 import javax.persistence.*;
 
@@ -14,15 +14,13 @@ public class PersonaDAO {
         em = emf.createEntityManager();
     }
 
-    public void listar() {
+    public List<Persona> listar() {
         String hql = "SELECT p FROM Persona p";
         Query q = em.createQuery(hql);
 
         List<Persona> personas = q.getResultList();
 
-        for (Persona p : personas) {
-            System.out.println("personas: " + p);
-        }
+        return personas;
     }
 
     public void insertar(Persona persona) {

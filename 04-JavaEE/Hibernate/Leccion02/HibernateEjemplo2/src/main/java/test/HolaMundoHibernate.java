@@ -17,7 +17,7 @@ public class HolaMundoHibernate {
     public static void main(String[] args) {
         String hql = "SELECT p FROM Persona p";
 
-        EntityManagerFactory emf = Persistence.createEntityManagerFactory("HibernateEjemplo2");
+        EntityManagerFactory emf = Persistence.createEntityManagerFactory("HibernatePU");
         EntityManager em = emf.createEntityManager();
 
         Query q = em.createQuery(hql);
